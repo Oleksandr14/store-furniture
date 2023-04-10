@@ -42,14 +42,20 @@ export default function Header() {
         </NavLink>
 
         <ul className="nav">
-          <li>About us</li>
-          <li>Contacts</li>
-          <li>Profile</li>
+          <li>
+            <NavLink to="about">About us</NavLink>
+          </li>
+          <li>
+            <NavLink to="contacts">Contacts</NavLink>
+          </li>
+          <li>
+            <NavLink to="profile">Profile</NavLink>
+          </li>
         </ul>
 
         <FaShoppingCart
           onClick={() => setCartOpen(!cartOpen)}
-          className={`shop-cart-btn ${cartOpen && "active"}`}
+          className={`shop-cart-btn ${cartOpen && "active-icon"}`}
         />
         {cartOpen && (
           <div className="shop-cart">

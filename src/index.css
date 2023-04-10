@@ -14,6 +14,13 @@ body {
     color: #222;
 }
 
+.loader {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #dc3d3d;
+}
+
 .wrapper {
     width: 1280px;
     margin: 50px auto;
@@ -23,7 +30,7 @@ header .wrapper{
     position: relative;
 }
 
-header .logo {
+header .logo  {
     font-weight: 600;
     font-size: 20px;
     color: #333;
@@ -127,9 +134,14 @@ header .shop-cart .empty h2 {
     color: #ca5252;
 }
 
-.active {
+.active-icon {
     color: #dc3d3d;
     transform: scale(1.5);
+}
+
+.active {
+    font-weight: 600;
+    color: #dc3d3d;
 }
 
 .presentation {
@@ -203,6 +215,7 @@ main .item {
     flex-basis: calc((100% - 2 * 20px) / 3);
     padding-bottom: 20px;
     background-color: #f5f5f5;
+    border-radius: 10px 10px 0 0;
 }
 
 main .item img {
