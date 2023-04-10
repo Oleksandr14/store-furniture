@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/store-furniture/static/css/main.a17e474c.css",
+    "main.js": "/store-furniture/static/js/main.c033961a.js",
+    "static/media/header.jpg": "/store-furniture/static/media/header.89a0363900b06260c5c5.jpg",
+    "static/media/table.jpg": "/store-furniture/static/media/table.0b6d3007a3a42518f6f7.jpg",
+    "static/media/bed.jpg": "/store-furniture/static/media/bed.5f0f8d449e151ed1b4b9.jpg",
+    "static/media/commode.jpg": "/store-furniture/static/media/commode.cdebf20c712d6c9f41a6.jpg",
+    "static/media/sofa.jpg": "/store-furniture/static/media/sofa.990bc7e2db0d3a5b4ebb.jpg",
+    "static/media/lunch-table.jpg": "/store-furniture/static/media/lunch-table.a12d76af3be2dbd38832.jpg",
+    "static/media/wardrobe.jpg": "/store-furniture/static/media/wardrobe.603a906c33fc07dbb1cb.jpg",
+    "static/media/Sleeping-linen.jpg": "/store-furniture/static/media/Sleeping-linen.a21995f18192eb0a1633.jpg",
+    "static/media/bar-chair.jpg": "/store-furniture/static/media/bar-chair.7faea7627ce3873ca9c9.jpg",
+    "index.html": "/store-furniture/index.html",
+    "main.a17e474c.css.map": "/store-furniture/static/css/main.a17e474c.css.map",
+    "main.c033961a.js.map": "/store-furniture/static/js/main.c033961a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a17e474c.css",
+    "static/js/main.c033961a.js"
+  ]
+}
