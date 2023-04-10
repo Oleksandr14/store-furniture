@@ -1,13 +1,253 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    background-color: #fff;
+    color: #222;
+}
+
+.wrapper {
+    width: 1280px;
+    margin: 50px auto;
+}
+
+header .wrapper{
+    position: relative;
+}
+
+header .logo {
+    font-weight: 600;
+    font-size: 20px;
+    color: #333;
+}
+
+header ul.nav {
+    float: right;
+    display: flex;
+    column-gap: 25px;
+    margin-left: 20px;
+    list-style: none;
+}
+
+header ul.nav li {
+    cursor: pointer;
+
+    transition: opacity 500ms ease;
+}
+
+header ul.nav li:hover {
+    opacity: 0.5;
+}
+
+header .shop-cart-btn {
+    float: right;
+    cursor: pointer;
+
+    transition: color, transform 500ms ease;
+}
+
+header .shop-cart-btn:hover,
+header .shop-cart-btn:hover{
+    color: #dc3d3d;
+    transform: scale(1.5);
+}
+
+header .shop-cart {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    top: 30px;
+    right: 0;
+    width: 450px;
+    z-index: 100;
+    padding: 20px;
+    background-color: #fafafa;
+
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+header .shop-cart .item {
+    width: 100%;
+    float: left;
+}
+
+header .shop-cart .item img {
+    width: 70px;
+    float: left;
+    margin-right: 20px;
+}
+
+header .shop-cart .item h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+header .shop-cart .item p {
+    color: #797979;
+    font-weight: 600;
+}
+
+header .shop-cart .item .delete-icon {
+    position: relative;
+    top: -25px;
+    float: right;
+    color: #ca5252;
+    cursor: pointer;
+
+    transition: color, transform 500ms ease;
+}
+
+header .shop-cart .sum {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+header .shop-cart .item .delete-icon:hover {
+    color: #dc0909;
+    transform: scale(1.5);
+}
+
+header .shop-cart .empty h2 {
+    font-size: 20px;
+    color: #ca5252;
+}
+
+.active {
+    color: #dc3d3d;
+    transform: scale(1.5);
+}
+
+.presentation {
+    position: relative;
+    margin: 50px 0 ;
+    width: 100%;
+    height: 500px;
+
+    background: url('./img/header.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-color: #bcbcbc;
+}
+
+.presentation::after {
+    content: 'Best products for your home';
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 300px;
+    font-size: 30px;
+    font-weight: 600px;
+    color: #fff;
+}
+
+.presentation::before {
+    content: 'at low prices';
+    position: absolute;
+    top: 180px;
+    left: 50px;
+    width: 300px;
+    font-size: 15px;
+    font-weight: 300px;
+    color: #fff;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+    column-gap: 25px;
+}
+
+.categories div {
+    padding: 10px;
+    background: #f2f2f2;
+    border-radius: 50px;
+    cursor: pointer;
+
+    border: 1px solid transparent;
+
+    transition: border-color 500ms ease;
+}
+
+.categories div:hover {
+    border-color: #ca5252;
+    
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+main .item {
+    position: relative;
+    flex-basis: calc((100% - 2 * 20px) / 3);
+    padding-bottom: 20px;
+    background-color: #f5f5f5;
+}
+
+main .item img {
+    width: 100%;
+    height: 305px;
+    border-radius: 10px 10px 0 0;
+}
+
+main .item img:hover {
+    transform: scale(1.05);
+}
+
+main h2,
+main p,
+main b {
+    margin: 10px 20px;
+    color: #333;
+}
+
+main b {
+    color: #5fa36a;
+}
+
+main .add-to-card {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: #ca5252;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: 600;
+
+    transition: transform 500ms ease;
+}
+
+main .add-to-card:hover {
+    transform: scale(1.5) translateY(-5px);
+}
+
+footer {
+    margin-top: 10px;
+    text-align: center;  
 }
